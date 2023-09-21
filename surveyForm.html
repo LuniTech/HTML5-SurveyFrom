@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input, textarea,select{
+background-color:rgb(128,250,86);
+font-family: Times;
+font-size:20px;
+}
+h2{
+text-align:center;
+}
+h1{
+text-align:center;
+font-family:stencil;
+}
+body
+{
+background-color:rgb(77,249,57);
+}
+form{
+font-family:Verdana;
+font-weight:bold;
+
+}
+fieldset
+{
+padding:30px;
+background-color:rgb(4,219,15);
+}
+p
+{
+font-style:italic;
+font-size:14pt;
+}
+</style>
+</head>
+<body>
+<header>
+<h1 id="title">Student Accomodation</h1>
+</header>
+<main>
+
+<p id="description">Please fill in the following Student Information Form For Accomodation Into Campus Residences</p>
+<h2>Student Information</h2>
+<form id="survey-form">
+<fieldset>
+<label for="name" id="name-label">Name:</label>
+<input type="text" id="name" required placeholder="Example: John">
+<br><br>
+<label for="number" id="number-label">Age:</label>
+<input type="number" id="number" min="3" max="150" placeholder="Example:27">
+
+<br><br>
+Select Gender: <br>
+Male: <input type="radio" name="Selectors" checked value="Male">
+<br>
+Female: <input type="radio" name="Selectors" value="Female">
+<br>
+Other: <input type="radio" name="Selectors" value="Other">
+<br><br>
+<label for="email" id="email-label">Email:</label>
+<input type="email" id="email" required placeholder="example: myemail@gmail.com">
+
+<br><br>
+<label for="drop-down">Please Select Faculty</label>
+<select id="dropdown">
+<option>Law</option>
+<option>Science</option>
+<option>Engineering</option>
+<option>Humanities</option>
+<option>Health Science</option>
+</select>
+<br><br>
+Indicate Special Needs If Applicable:<br>
+Extra Time: <input type=checkbox value="Extra Time" value="Extra Time"><br>
+Use Of Scribe: <input type=checkbox value="Use Of Scribe"><br>
+Use Of Personal Assistant: <input type=checkbox value="Use Of Personal Assistant"><br>
+Use Of Computer/laptop: <input type=checkbox value="Use Of Computer/laptop"><br>
+Use Of Equipment: <input type=checkbox value="Use Of Equipment"><br>
+Handwriting Accommodation: <input type=checkbox value="Handwriting Accommodation">
+<br>
+<textarea rows="15" cols="30"></textarea>
+<br>
+<input type="submit" value="Submit Form" id=submit>
+</fieldset>
+</form>
+</main>
+<footer>Basic Demo Created by Z.I Lunika</footer>
+</body>
+</html>
